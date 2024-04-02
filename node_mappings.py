@@ -5,14 +5,14 @@ except ImportError:
 
 NODE_CLASS_MAPPINGS = {
     ### LoRA Nodes    
-    "CR Load LoRA": CR_LoraLoader,    
-    "CR LoRA Stack": CR_LoRAStack,
-    "CR Apply LoRA Stack": CR_ApplyLoRAStack,  
+    "WW Load LoRA": WW_LoraLoader,    
+    "WW LoRA Stack": WW_LoRAStack,
+    "CR Apply LoRA Stack": WW_ApplyLoRAStack,  
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     ### LoRA Nodes    
-    "CR Load LoRA": "👻 CR Load LoRA",    
-    "CR LoRA Stack": "👻 CR LoRA Stack",
-    "CR Apply LoRA Stack": "👻 CR Apply LoRA Stack",  
+    "WW Load LoRA": "👻 WW Load LoRA",    
+    "WW LoRA Stack": "👻 WW LoRA Stack",
+    "CR Apply LoRA Stack": "👻 WW Apply LoRA Stack",  
 }

@@ -1,6 +1,5 @@
 #---------------------------------------------------------------------------------------------------------------------#
-# Comfyroll Studio custom nodes by RockOfFire and Akatsuzi    https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes                             
-# for ComfyUI                                                 https://github.com/comfyanonymous/ComfyUI                                               
+# Wyspywoods                                             
 #---------------------------------------------------------------------------------------------------------------------#
 
 import os
@@ -18,7 +17,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.realpath(__file__)), "co
 # LoRA Nodes
 #---------------------------------------------------------------------------------------------------------------------#
 # This is a load lora node with an added switch to turn on or off.  On will add the lora and off will skip the node.
-class CR_LoraLoader:
+class WW_LoraLoader:
     def __init__(self):
         self.loaded_lora = None
 
@@ -66,7 +65,7 @@ class CR_LoraLoader:
 #---------------------------------------------------------------------------------------------------------------------#
 # Based on Efficiency Nodes
 # This is a lora stack where a single node has 3 different loras each with their own switch
-class CR_LoRAStack:
+class WW_LoRAStack:
 
     @classmethod
     def INPUT_TYPES(cls):
@@ -176,7 +175,7 @@ class CR_LoRAStack:
         return (lora_list, show_help, )
 #---------------------------------------------------------------------------------------------------------------------#
 # This applies the lora stack.
-class CR_ApplyLoRAStack:
+class WW_ApplyLoRAStack:
 
     @classmethod
     def INPUT_TYPES(cls):
