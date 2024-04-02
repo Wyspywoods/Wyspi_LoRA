@@ -10,7 +10,7 @@
 from .node_mappings import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
 
 print("------------------------------------------")    
-print("\033[35mWyspi v.a1 : \033[95m 1 Node Loaded\033[0m")
+print("\033[35mWyspi v.a2 : \033[95m 2 Node Loaded\033[0m")
 print("------------------------------------------") 
 print("** oOoOoOo") 
 print("** oOoOoOo") 
