@@ -73,25 +73,56 @@ class CR_LoRAStack:
         loras = ["None"] + folder_paths.get_filename_list("loras")
     
         return {"required": {
-                "switch_1": (["🤍💤🤍","❤️💚❤️"],),
-                "lora_name_1": (loras,),
-                "model_weight_1": ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.05}),
-                "switch_2": (["🤍💤🤍","❤️💚❤️"],),
-                "lora_name_2": (loras,),
-                "model_weight_2": ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.05}),
-                "switch_3": (["🤍💤🤍","❤️💚❤️"],),
-                "lora_name_3": (loras,),
-                "model_weight_3": ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.05}),
-                "switch_4": (["🤍💤🤍","❤️💚❤️"],),
-                "lora_name_4": (loras,),
-                "model_weight_4": ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.05}),
-                "switch_5": (["🤍💤🤍","❤️💚❤️"],),
-                "lora_name_5": (loras,),
-                "model_weight_5": ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.05}),
-                "switch_6": (["🤍💤🤍","❤️💚❤️"],),
-                "lora_name_6": (loras,),
-                "model_weight_6": ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.05}),
-            },
+            "lora_name_1": (loras,),
+            "switch_1": (["🤍💤🤍","❤️💚❤️"],),
+            "model_weight_1": ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.05}),
+            "text_box_1": ("STRING", {"default": "TriggerW"}),
+
+            "lora_name_2": (loras,),
+            "switch_2": (["🤍💤🤍","❤️💚❤️"],),
+            "model_weight_2": ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.05}),
+            "text_box_2": ("STRING", {"default": "TriggerW"}),
+
+            "lora_name_3": (loras,),
+            "switch_3": (["🤍💤🤍","❤️💚❤️"],),
+            "model_weight_3": ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.05}),
+            "text_box_3": ("STRING", {"default": "TriggerW"}),
+
+            "lora_name_4": (loras,),
+            "switch_4": (["🤍💤🤍","❤️💚❤️"],),
+            "model_weight_4": ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.05}),
+            "text_box_4": ("STRING", {"default": "TriggerW"}),
+
+            "lora_name_5": (loras,),
+            "switch_5": (["🤍💤🤍","❤️💚❤️"],),
+            "model_weight_5": ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.05}),
+            "text_box_5": ("STRING", {"default": "TriggerW"}),
+
+            "lora_name_6": (loras,),
+            "switch_6": (["🤍💤🤍","❤️💚❤️"],),
+            "model_weight_6": ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.05}),
+            "text_box_6": ("STRING", {"default": "TriggerW"}),
+
+            "lora_name_7": (loras,),
+            "switch_7": (["🤍💤🤍","❤️💚❤️"],),
+            "model_weight_7": ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.05}),
+            "text_box_7": ("STRING", {"default": "TriggerW"}),
+
+            "lora_name_8": (loras,),
+            "switch_8": (["🤍💤🤍","❤️💚❤️"],),
+            "model_weight_8": ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.05}),
+            "text_box_8": ("STRING", {"default": "TriggerW"}),
+
+            "lora_name_9": (loras,),
+            "switch_9": (["🤍💤🤍","❤️💚❤️"],),
+            "model_weight_9": ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.05}),
+            "text_box_9": ("STRING", {"default": "TriggerW"}),
+
+            "lora_name_10": (loras,),
+            "switch_10": (["🤍💤🤍","❤️💚❤️"],),
+            "model_weight_10": ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.05}),
+            "text_box_10": ("STRING", {"default": "TriggerW"}),
+        },
             "optional": {"lora_stack": ("LORA_STACK",)
             },
     }
@@ -101,15 +132,15 @@ class CR_LoRAStack:
     FUNCTION = "lora_stacker"
     CATEGORY = icons.get("Wyspi/LoRA")
 
-    def lora_stacker(self, lora_name_1, model_weight_1, switch_1, lora_name_2, model_weight_2, switch_2, lora_name_3, model_weight_3, switch_3, lora_name_4, model_weight_4, switch_4, lora_name_5, model_weight_5, switch_5, lora_name_6, model_weight_6, switch_6, lora_stack=None):
+    def lora_stacker(self, lora_name_1, model_weight_1, switch_1, text_box_1, lora_name_2, model_weight_2, switch_2, text_box_2, lora_name_3, model_weight_3, switch_3, text_box_3, lora_name_4, model_weight_4, switch_4, text_box_4, lora_name_5, model_weight_5, switch_5, text_box_5, lora_name_6, model_weight_6, switch_6, text_box_6, lora_name_7, model_weight_7, switch_7, text_box_7, lora_name_8, model_weight_8, switch_8, text_box_8, lora_name_9, model_weight_9, switch_9, text_box_9, lora_name_10, model_weight_10, switch_10, text_box_10, lora_stack=None):
         clip_weight = 1.0  # Set clip_weights to 1 by default
 
         # Initialise the list
         lora_list=list()
-    
+
         if lora_stack is not None:
             lora_list.extend([l for l in lora_stack if l[0] != "None"])
-    
+
         if lora_name_1 != "None" and  switch_1 == "❤️💚❤️":
             lora_list.extend([(lora_name_1, model_weight_1, clip_weight)]),
 
@@ -127,7 +158,19 @@ class CR_LoRAStack:
 
         if lora_name_6 != "None" and  switch_6 == "❤️💚❤️":
             lora_list.extend([(lora_name_6, model_weight_6, clip_weight)]),
-       
+
+        if lora_name_7 != "None" and  switch_7 == "❤️💚❤️":
+            lora_list.extend([(lora_name_7, model_weight_7, clip_weight)]),
+
+        if lora_name_8 != "None" and  switch_8 == "❤️💚❤️":
+            lora_list.extend([(lora_name_8, model_weight_8, clip_weight)]),
+
+        if lora_name_9 != "None" and  switch_9 == "❤️💚❤️":
+            lora_list.extend([(lora_name_9, model_weight_9, clip_weight)]),
+
+        if lora_name_10 != "None" and  switch_10 == "❤️💚❤️":
+            lora_list.extend([(lora_name_10, model_weight_10, clip_weight)]),
+
         show_help = "💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚"           
 
         return (lora_list, show_help, )
