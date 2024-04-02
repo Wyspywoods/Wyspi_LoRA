@@ -71,7 +71,7 @@ class WW_LoraLoader:
 
     RETURN_TYPES = ("LORA_STACK", "STRING", )
     RETURN_NAMES = ("LORA_STACK", "show_help", )
-    FUNCTION = "lora_stacker"
+    FUNCTION = "load_lora"
     CATEGORY = icons.get("Wyspi/LoRA")
 
     def load_lora(self, lora_name_1, model_weight_1, switch_1, lora_name_2, model_weight_2, switch_2, lora_name_3, model_weight_3, switch_3, lora_name_4, model_weight_4, switch_4, lora_name_5, model_weight_5, switch_5, lora_name_6, model_weight_6, switch_6, lora_name_7, model_weight_7, switch_7, lora_name_8, model_weight_8, switch_8, lora_name_9, model_weight_9, switch_9, lora_name_10, model_weight_10, switch_10, lora_stack=None):
